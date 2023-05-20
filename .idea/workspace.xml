@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00cb4b5e-2ccf-41c0-9a36-fa003e373e66" name="Changes" comment="스프링 컨테이너 사용">
+    <list default="true" id="00cb4b5e-2ccf-41c0-9a36-fa003e373e66" name="Changes" comment="스프링 컨테이너 사용2">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/config/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/config/UserConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dobmain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dobmain/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/user/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/user/response/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/user/UserJdbcRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/user/UserServiceV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684559934686</updated>
       <workItem from="1684559935920" duration="56000" />
-      <workItem from="1684560052701" duration="11151000" />
+      <workItem from="1684560052701" duration="14146000" />
     </task>
     <task id="LOCAL-00001" summary="api">
       <created>1684561823769</created>
@@ -105,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684575512162</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="스프링 컨테이너 사용2">
+      <created>1684577020075</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684577020075</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +141,7 @@
     <MESSAGE value="데이터베이스, 유저 업데이트 및 삭제 api" />
     <MESSAGE value="controller를 service와 repository로 구조분리" />
     <MESSAGE value="스프링 컨테이너 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="스프링 컨테이너 사용" />
+    <MESSAGE value="스프링 컨테이너 사용2" />
+    <option name="LAST_COMMIT_MESSAGE" value="스프링 컨테이너 사용2" />
   </component>
 </project>
