@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00cb4b5e-2ccf-41c0-9a36-fa003e373e66" name="Changes" comment="트랜잭션 적용">
+    <list default="true" id="00cb4b5e-2ccf-41c0-9a36-fa003e373e66" name="Changes" comment="책 등록 기능">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5f237d1b-057d-45de-bc2b-7e358a09e8a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5f237d1b-057d-45de-bc2b-7e358a09e8a8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/book/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dobmain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dobmain/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/user/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/user/response/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/book/BookMemoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/book/BookMySqlRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/book/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/book/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/book/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/book/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/user/UserServiceV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/user/UserServiceV2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684559934686</updated>
       <workItem from="1684559935920" duration="56000" />
-      <workItem from="1684560052701" duration="15678000" />
+      <workItem from="1684560052701" duration="17047000" />
     </task>
     <task id="LOCAL-00001" summary="api">
       <created>1684561823769</created>
@@ -135,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684585193260</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="책 등록 기능">
+      <created>1684586545681</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684586545681</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +162,7 @@
     <MESSAGE value="스프링 컨테이너 사용2" />
     <MESSAGE value="JPA 이용하여 쿼리작성" />
     <MESSAGE value="트랜잭션 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="트랜잭션 적용" />
+    <MESSAGE value="책 등록 기능" />
+    <option name="LAST_COMMIT_MESSAGE" value="책 등록 기능" />
   </component>
 </project>
