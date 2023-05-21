@@ -1,7 +1,11 @@
-package com.group.libraryapp.dto.user.response;
+package com.group.libraryapp.dto;
 
-import com.group.libraryapp.domain.user.User;
+import com.group.libraryapp.entity.User;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class UserResponse {
     private long id;
     private String name;
@@ -22,17 +26,5 @@ public class UserResponse {
         this.id = id;
         this.name = user.getName();
         this.age = user.getAge();
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Integer getAge() {
-        return age;
     }
 }

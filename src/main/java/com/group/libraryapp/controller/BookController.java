@@ -1,20 +1,19 @@
-package com.group.libraryapp.controller.book;
+package com.group.libraryapp.controller;
 
-import com.group.libraryapp.dto.book.request.BookCreateRequest;
-import com.group.libraryapp.dto.book.request.BookLoanRequest;
-import com.group.libraryapp.dto.book.request.BookReturnRequest;
-import com.group.libraryapp.service.book.BookService;
+import com.group.libraryapp.dto.BookCreateRequest;
+import com.group.libraryapp.dto.BookLoanRequest;
+import com.group.libraryapp.dto.BookReturnRequest;
+import com.group.libraryapp.service.BookService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequiredArgsConstructor
 public class BookController {
     private final BookService bookService;
-    public BookController(BookService bookService){
-        this.bookService = bookService;
-    }
 
     @PostMapping("/book")
     public void saveBook(@RequestBody BookCreateRequest request){

@@ -1,33 +1,28 @@
-package com.group.libraryapp.service.book;
+package com.group.libraryapp.service;
 
-import com.group.libraryapp.domain.book.Book;
-import com.group.libraryapp.domain.book.BookRepository;
-import com.group.libraryapp.domain.user.User;
-import com.group.libraryapp.domain.user.UserRepository;
-import com.group.libraryapp.domain.user.loanhistory.UserLoanHistory;
-import com.group.libraryapp.domain.user.loanhistory.UserLoanHistoryRepository;
-import com.group.libraryapp.dto.book.request.BookCreateRequest;
-import com.group.libraryapp.dto.book.request.BookLoanRequest;
-import com.group.libraryapp.dto.book.request.BookReturnRequest;
+import com.group.libraryapp.entity.Book;
+import com.group.libraryapp.repository.BookRepository;
+import com.group.libraryapp.entity.User;
+import com.group.libraryapp.repository.UserRepository;
+import com.group.libraryapp.repository.UserLoanHistoryRepository;
+import com.group.libraryapp.dto.BookCreateRequest;
+import com.group.libraryapp.dto.BookLoanRequest;
+import com.group.libraryapp.dto.BookReturnRequest;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@RequiredArgsConstructor
 public class BookService {
     private final BookRepository bookRepository;
     private final UserLoanHistoryRepository userLoanHistoryRepository;
     private final UserRepository userRepository;
 
-    public BookService(BookRepository bookRepository,
-                       UserLoanHistoryRepository userLoanHistoryRepository,
-                       UserRepository userRepository){
-        this.bookRepository = bookRepository;
-        this.userLoanHistoryRepository = userLoanHistoryRepository;
-        this.userRepository = userRepository;
-    }
     @Transactional
     public void saveBook(BookCreateRequest request){
-        bookRepository.save(new Book(request.getName()));
+        Book book = new Book(request.getName());
+        bookRepository.save(book);
     }
 
     @Transactional

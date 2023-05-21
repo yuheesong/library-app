@@ -1,12 +1,13 @@
-package com.group.libraryapp.domain.user;
+package com.group.libraryapp.entity;
 
-import com.group.libraryapp.domain.user.loanhistory.UserLoanHistory;
+import lombok.Getter;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Getter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,15 +26,6 @@ public class User {
         }
         this.name=name;
         this.age=age;
-    }
-    public String getName(){
-        return name;
-    }
-    public Integer getAge(){
-        return age;
-    }
-    public Long getId(){
-        return id;
     }
 
     public void updateName(String name){

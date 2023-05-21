@@ -1,6 +1,4 @@
-package com.group.libraryapp.domain.user.loanhistory;
-
-import com.group.libraryapp.domain.user.User;
+package com.group.libraryapp.entity;
 
 import javax.persistence.*;
 
@@ -16,12 +14,8 @@ public class UserLoanHistory {
     private User user;
 
     private String bookName;
-
     private boolean isReturn;
-
-    protected UserLoanHistory(){
-
-    }
+    protected UserLoanHistory(){}
 
     public UserLoanHistory(User user, String bookName) {
         this.user = user;

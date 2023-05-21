@@ -1,10 +1,11 @@
-package com.group.libraryapp.service.user;
+package com.group.libraryapp.service;
 
-import com.group.libraryapp.domain.user.User;
-import com.group.libraryapp.domain.user.UserRepository;
-import com.group.libraryapp.dto.user.request.UserCreateRequest;
-import com.group.libraryapp.dto.user.request.UserUpdateRequest;
-import com.group.libraryapp.dto.user.response.UserResponse;
+import com.group.libraryapp.entity.User;
+import com.group.libraryapp.repository.UserRepository;
+import com.group.libraryapp.dto.UserCreateRequest;
+import com.group.libraryapp.dto.UserUpdateRequest;
+import com.group.libraryapp.dto.UserResponse;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,12 +13,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class UserServiceV2 {
+@RequiredArgsConstructor
+public class UserService {
     private final UserRepository userRepository;
 
-    public UserServiceV2(UserRepository userRepository){
-        this.userRepository = userRepository;
-    }
     @Transactional
     public void saveUser(UserCreateRequest request){
         userRepository.save(new User(request.getName(), request.getAge()));
