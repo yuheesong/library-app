@@ -4,7 +4,6 @@ import javax.persistence.*;
 
 @Entity
 public class UserLoanHistory {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id = null;
@@ -14,8 +13,12 @@ public class UserLoanHistory {
     private User user;
 
     private String bookName;
+
     private boolean isReturn;
-    protected UserLoanHistory(){}
+
+    protected UserLoanHistory(){
+
+    }
 
     public UserLoanHistory(User user, String bookName) {
         this.user = user;

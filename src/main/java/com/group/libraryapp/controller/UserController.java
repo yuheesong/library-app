@@ -3,16 +3,16 @@ package com.group.libraryapp.controller;
 import com.group.libraryapp.dto.UserCreateRequest;
 import com.group.libraryapp.dto.UserUpdateRequest;
 import com.group.libraryapp.dto.UserResponse;
-import com.group.libraryapp.service.UserService;
+import com.group.libraryapp.service.UserServiceV2;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
 @RequiredArgsConstructor
 @RestController
 public class UserController {
-    private final UserService userService;
+    private final UserServiceV2 userService;
+
     @PostMapping("/user")
     public void saveUser(@RequestBody UserCreateRequest request){
         userService.saveUser(request);
@@ -31,4 +31,5 @@ public class UserController {
     public void deleteUser(@RequestParam String name){
         userService.deleteUser(name);
     }
+
 }
