@@ -4,29 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00cb4b5e-2ccf-41c0-9a36-fa003e373e66" name="Changes" comment="리팩토링 및 지연로딩">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="00cb4b5e-2ccf-41c0-9a36-fa003e373e66" name="Changes" comment="구조 및 코드 정리 (+롬복 적용)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/config/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/config/UserConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/book/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/loanhistory/UserLoanHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/entity/UserLoanHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/loanhistory/UserLoanHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/UserLoanHistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/book/request/BookCreateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/BookCreateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/book/request/BookLoanRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/BookLoanRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/book/request/BookReturnRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/BookReturnRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/user/request/UserCreateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/UserCreateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/user/request/UserUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/UserUpdateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/user/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/user/UserJdbcRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/user/UserServiceV1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/user/UserServiceV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/config/UserConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/BookCreateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/BookLoanRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/BookReturnRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/UserCreateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/UserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/UserUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/entity/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/entity/UserLoanHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/UserLoanHistoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +34,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="library-app" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,14 +95,15 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.group.libraryapp.repository" />
-      <recent name="com.group.libraryapp.dto" />
-      <recent name="com.group.libraryapp.controller" />
       <recent name="com.group.libraryapp.domain" />
+      <recent name="com.group.libraryapp.dto" />
+      <recent name="com.group.libraryapp.dto.book" />
       <recent name="com.group.libraryapp.service" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="LibraryAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="dev" />
       <module name="library-app.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.group.libraryapp.LibraryAppApplication" />
       <method v="2">
@@ -109,7 +124,7 @@
       <workItem from="1684604002018" duration="350000" />
       <workItem from="1684605088736" duration="132000" />
       <workItem from="1684605663210" duration="51000" />
-      <workItem from="1684633436040" duration="7216000" />
+      <workItem from="1684633436040" duration="23407000" />
     </task>
     <task id="LOCAL-00001" summary="api">
       <created>1684561823769</created>
@@ -195,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684597544460</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="구조 및 코드 정리 (+롬복 적용)">
+      <created>1684640710908</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684640710908</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +247,7 @@
     <MESSAGE value="책 반납 기능" />
     <MESSAGE value="연관관계 매핑 및 리팩토링" />
     <MESSAGE value="리팩토링 및 지연로딩" />
-    <option name="LAST_COMMIT_MESSAGE" value="리팩토링 및 지연로딩" />
+    <MESSAGE value="구조 및 코드 정리 (+롬복 적용)" />
+    <option name="LAST_COMMIT_MESSAGE" value="구조 및 코드 정리 (+롬복 적용)" />
   </component>
 </project>
