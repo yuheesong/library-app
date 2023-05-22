@@ -1,4 +1,5 @@
-### CRUD를 통한 도서 관리 시스템 -> 사이트 주소: http://www.yuyu-library.site:8080/v1/index.html  
+## CRUD를 통한 도서 관리 시스템  
+### 💌 사이트 주소 (만료기간: ~2024/05/22): http://www.yuyu-library.site:8080/v1/index.html 
 - 사용 : Java11, Spring Boot 2.7.12, gradle, MySQL, AWS  
 
 - 오류 : BookService에서 BookService 생성자를 직접 만든 것에서 @RequiredArgsConstructor 애노테이션을 사용하는 방법으로 대체하였다. 그랬더니 not initialized in the default constructor 오류가 발생하였다. 확인해보니 gradle 5부터는 다음과 같이 어노테이션을 구별해서 추가해줘야 한다고 한다.   
